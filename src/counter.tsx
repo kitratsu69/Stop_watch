@@ -3,6 +3,10 @@ import { calculatetime, getfomtime } from "./func";
 
 export let globalcounter = 0;
 
+export function globalset(val: number) {
+  globalcounter = val;
+}
+
 export default function Counter(props: {
   state: boolean;
   oninit: (settcounter: (v: number) => void) => void;
