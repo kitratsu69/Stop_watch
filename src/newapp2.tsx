@@ -113,8 +113,8 @@ function Newapp2() {
             </svg>
           </button>
         </div>
-        <div className="w-full max-w-[600px] flex items-center justify-center text-white text-xs sm:text-lg md:text-lg lg:text-lg bg- h-96  border-2 border-stone-400">
-          <div className="flex w-[98%] h-[97%] border-2 border-stone-300 backdrop-blur opacity-70 bg-blend-hard-light bg-gradient-to-r from-slate-900 via-stone-600 to-neutral-900 overflow-auto justify-between">
+        <div className="w-full max-w-[600px] flex items-center justify-center text-white text-xs sm:text-lg md:text-lg lg:text-lg bg- h-[420px]  border-2 border-stone-500">
+          <div className="flex w-[98%] h-[97%] border-2 border-stone-400 backdrop-blur opacity-70 bg-blend-hard-light bg-gradient-to-r from-slate-900 via-stone-600 to-neutral-900 overflow-auto justify-between">
             <div className="flex space-y-1 flex-col pl-2">
               <span className=" font-semibold text-xl">Laps</span>
               {vals.map((e, i) => {
