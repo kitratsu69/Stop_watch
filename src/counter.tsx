@@ -35,14 +35,15 @@ export default function Counter(props: {
   }, [props.state]);
   return (
     <div>
-      <div className="justify-center">
-        <span className="text-8xl text-gray-200 justify-center">
+      <div className="w-full flex flex-col items-center">
+        <span className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-200 justify-center">
           {getfomtime(calculatetime(counter))}
         </span>
-        <div className="flex justify-center text-center text-gray-200 mr-[120px]">
-          <span className="justify-center">hr</span>
-          <span className="justify-center px-[110px]">min</span>
-          <span className="justify-center">sec</span>
+        <div className="flex w-full max-w-[300px] justify-between text-left text-gray-200 ">
+          <span className="">hr</span>
+          <span className="">min</span>
+          <span className="">sec</span>
+          <span className="">m-sec</span>
         </div>
       </div>
     </div>
