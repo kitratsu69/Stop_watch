@@ -7,9 +7,11 @@ export function globalset(val: number) {
   globalcounter = val;
 }
 
+type setter = (n: number) => void;
 export default function Counter(props: {
   state: boolean;
-  oninit: (settcounter: (v: number) => void) => void;
+  // oninit: (settcounter: (v: number) => void) => void;
+  oninit: (set1: setter) => void;
 }) {
   const [counter, setcounter] = useState(0);
   useEffect(() => {

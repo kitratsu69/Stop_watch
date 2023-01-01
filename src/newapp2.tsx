@@ -30,7 +30,7 @@ function Newapp2() {
   }
 
   return (
-    <div className="space-y-5 m-6 justify-center text-center">
+    <div className="space-y-5 justify-center text-center w-full">
       <Counter
         oninit={(sc) => {
           setcounter.current = sc;
@@ -113,8 +113,8 @@ function Newapp2() {
         </button>
       </div>
       <div
-        className="relative flex justify-center overflow-auto
-                    p-4 mx-16 h-80 text-justify"
+        className="relative flex overflow-auto
+                    p-6 h-96 text-justify justify-between sm:mx-0 md:mx-24 lg:mx-52"
       >
         <div className="flex flex-col">
           <span className=" font-semibold w-20 text-lg text-gray-200">
@@ -142,7 +142,7 @@ function Newapp2() {
             );
           })}
         </div>
-        <div className="flex flex-col px-[200px]">
+        <div className="flex flex-col">
           <span className=" font-semibold w-28 text-lg text-gray-200">
             Time
           </span>
